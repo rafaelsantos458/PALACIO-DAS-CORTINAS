@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-brand-dark: #0F0F0F;
+  --color-brand-card: #151515;
+  --color-brand-accent: #C5A059;
+  --color-brand-text: #F5F2ED;
+  --color-brand-muted: rgba(245, 242, 237, 0.6);
+}
+
+@layer utilities {
+  /* Subtle Zoom effect for backgrounds */
+  @keyframes subtleZoom {
+    0% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1.08);
+    }
+  }
+
+  .animate-subtleZoom {
+    animation: subtleZoom 15s ease-in-out infinite alternate;
+  }
+
+  /* Gentle fade ins */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+}

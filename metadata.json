@@ -1,0 +1,6 @@
+{
+  "name": "Palácio das Cortinas",
+  "description": "Website moderno, sofisticado e interativo para a Palácio das Cortinas. Especializados em cortinas e persianas sob medida sob alta costura.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
